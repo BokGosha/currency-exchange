@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'war'
+    id 'org.gretty' version "5.1.0"
 }
 
 group = 'org.example'
@@ -36,4 +37,10 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+gretty {
+    httpPort = 8080
+    contextPath = '/api'
+    servletContainer = 'tomcat11'
 }
