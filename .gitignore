@@ -43,4 +43,5 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-identifier.sqlite
+hikari.properties
+.env
