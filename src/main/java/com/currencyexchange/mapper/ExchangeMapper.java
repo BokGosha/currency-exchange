@@ -7,7 +7,7 @@ import org.mapstruct.factory.Mappers;
 
 import java.math.BigDecimal;
 
-@Mapper(uses = {CurrencyMapper.class})
+@Mapper(uses = CurrencyMapper.class)
 public interface ExchangeMapper {
 
     ExchangeMapper INSTANCE = Mappers.getMapper(ExchangeMapper.class);
